@@ -10,3 +10,5 @@ $ docker-compose run composer create-project --prefer-dist cakephp/app app
 $ find ./app -not -name 'app' -maxdepth 1 -exec mv {} . \; && rmdir app
 $ docker-compose up -d
 ```
+
+After that, access to http://localhost:8000 by the browser.
