@@ -22,6 +22,7 @@ services:
     working_dir: /var/www/html
   dev-db:
     image: mysql:5.7
+    platform: linux/amd64
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
     environment:
       MYSQL_ROOT_PASSWORD: root
